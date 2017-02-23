@@ -64,6 +64,7 @@
     <module>rest</module>
     <module>data-jpa</module>
     <module>common</module>
+    <module>hibernate</module>
   </modules>
 
   <dependencyManagement>
