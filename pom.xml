@@ -140,6 +140,18 @@
             </dependency>
 
             <dependency>
+                <groupId>org.jboss.snowdrop</groupId>
+                <artifactId>user</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.snowdrop</groupId>
+                <artifactId>say-hello</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-spring-boot-starter-jaxrs</artifactId>
                 <version>${springboot.cxf.version}</version>
