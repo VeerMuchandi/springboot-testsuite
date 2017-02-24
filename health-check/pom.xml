@@ -30,6 +30,10 @@
 
     <!-- Test dependencies -->
     <dependency>
+      <groupId>io.obsidian</groupId>
+      <artifactId>obsidian-testsuite-common</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.jboss.snowdrop</groupId>
       <artifactId>springboot-testsuite-common</artifactId>
     </dependency>

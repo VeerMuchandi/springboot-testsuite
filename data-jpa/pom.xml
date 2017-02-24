@@ -65,7 +65,6 @@
         <dependency>
             <groupId>io.obsidian</groupId>
             <artifactId>obsidian-testsuite-common</artifactId>
-            <type>test-jar</type>
         </dependency>
         <dependency>
             <groupId>io.obsidian</groupId>

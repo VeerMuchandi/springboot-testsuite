@@ -17,11 +17,11 @@
 package org.jboss.snowdrop.springboot.health;
 
 import io.fabric8.kubernetes.client.KubernetesClient;
+import io.obsidian.testsuite.common.OpenShiftUtils;
 import io.restassured.RestAssured;
 import org.jboss.arquillian.container.test.api.RunAsClient;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.test.api.ArquillianResource;
-import org.jboss.snowdrop.common.OpenShiftUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -53,7 +53,7 @@ public class HealthCheckApplicationHealthyIT {
 	}
 
 	private String getHealthUrl() {
-		return OpenShiftUtils.getRouteUrl(this.kubernetesClient, ROUTE_NAME).toString() + "/health";
+		return OpenShiftUtils.getRouteUrl(this.kubernetesClient, ROUTE_NAME) + "/health";
 	}
 
 }
