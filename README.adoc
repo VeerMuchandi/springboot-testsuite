@@ -8,13 +8,21 @@
 
 == Instructions
 
-The command to be used to execute an Integration Test is :
+The command to be used to execute an Integration Test are :
 
+1) Using a username and password
 ----
-mvn clean verify -Popenshift -Plogin -Dopenshift.user=admin \
-                                     -Dopenshift.password=admin \
-                                     -Dopenshift.api=$(minishift console --url) \
-                                     -Dopenshift.namespace=test
+mvn clean verify -Popenshift -Dopenshift.username=admin \
+                             -Dopenshift.password=admin \
+                             -Dkubernetes.master=$(minishift console --url) \
+                             -Dkubernetes.namespace=test
+----
+
+2) With a Token
+----
+mvn clean verify -Popenshift -kubernetes.auth.token=TOKEN \
+                             -Dkubernetes.master=api.openshift.com \
+                             -Dopenshift.namespace=test
 ----
 
 == Use cases to be investigated
