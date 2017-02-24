@@ -19,6 +19,7 @@ package org.jboss.snowdrop.springboot.jpa;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import io.obsidian.testsuite.jpa.AbstractRecordsApplicationTestBase;
 import org.junit.runner.RunWith;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -33,7 +34,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class RecordsApplicationTest extends AbstractRecordsApplicationTest {
+public class RecordsApplicationTest extends AbstractRecordsApplicationTestBase {
 
 	@Value("${local.server.port}")
 	private int port;
