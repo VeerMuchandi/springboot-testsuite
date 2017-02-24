@@ -18,7 +18,7 @@ package org.jboss.snowdrop.springboot.hibernate;
 
 import javax.persistence.EntityManager;
 
-import org.jboss.snowdrop.common.domain.Band;
+import io.obsidian.testsuite.jpa.domain.Band;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

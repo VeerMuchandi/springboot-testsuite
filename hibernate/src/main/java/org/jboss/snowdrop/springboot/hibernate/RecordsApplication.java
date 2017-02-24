@@ -16,7 +16,7 @@
 
 package org.jboss.snowdrop.springboot.hibernate;
 
-import org.jboss.snowdrop.common.domain.Band;
+import io.obsidian.testsuite.jpa.domain.Band;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

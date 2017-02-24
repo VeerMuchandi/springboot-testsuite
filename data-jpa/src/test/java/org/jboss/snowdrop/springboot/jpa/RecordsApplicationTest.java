@@ -17,7 +17,6 @@
 package org.jboss.snowdrop.springboot.jpa;
 
 import java.net.MalformedURLException;
-import java.net.URL;
 
 import io.obsidian.testsuite.jpa.AbstractRecordsApplicationTestBase;
 import org.junit.runner.RunWith;
@@ -40,8 +39,8 @@ public class RecordsApplicationTest extends AbstractRecordsApplicationTestBase {
 	private int port;
 
 	@Override
-	protected URL getBaseUrl() throws MalformedURLException {
-		return new URL(String.format("http://localhost:%d", this.port));
+	protected String getBaseUrl() throws MalformedURLException {
+		return String.format("http://localhost:%d", this.port);
 	}
 
 }

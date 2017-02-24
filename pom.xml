@@ -94,6 +94,12 @@
                 <groupId>io.obsidian</groupId>
                 <artifactId>obsidian-testsuite-data-jpa</artifactId>
                 <version>${obsidian.testsuite.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.obsidian</groupId>
+                <artifactId>obsidian-testsuite-data-jpa</artifactId>
+                <version>${obsidian.testsuite.version}</version>
                 <type>test-jar</type>
                 <scope>test</scope>
             </dependency>

@@ -16,7 +16,7 @@
 
 package org.jboss.snowdrop.springboot.jpa.service;
 
-import org.jboss.snowdrop.common.domain.Record;
+import io.obsidian.testsuite.jpa.domain.Record;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
