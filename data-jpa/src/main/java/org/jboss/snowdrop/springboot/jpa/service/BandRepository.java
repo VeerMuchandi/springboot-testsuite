@@ -16,7 +16,7 @@
 
 package org.jboss.snowdrop.springboot.jpa.service;
 
-import org.jboss.snowdrop.springboot.jpa.domain.Band;
+import org.jboss.snowdrop.common.domain.Band;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

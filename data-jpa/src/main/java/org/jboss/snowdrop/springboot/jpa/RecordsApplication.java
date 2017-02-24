@@ -16,8 +16,11 @@
 
 package org.jboss.snowdrop.springboot.jpa;
 
+import org.jboss.snowdrop.common.domain.Band;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 /**
  * Entry point to the records application.
@@ -25,6 +28,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author <a href="mailto:gytis@redhat.com">Gytis Trikleris</a>
  */
 @SpringBootApplication
+@EntityScan(basePackageClasses = Band.class)
 public class RecordsApplication {
 
 	public static void main(String... args) {
