@@ -16,6 +16,7 @@
 
   <properties>
     <fabric8.skip>false</fabric8.skip>
+    <route.name>springboot-hibernate</route.name>
   </properties>
 
   <dependencies>

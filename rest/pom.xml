@@ -32,6 +32,7 @@
 
     <properties>
         <fabric8.skip>false</fabric8.skip>
+        <route.name>springboot-rest</route.name>
     </properties>
 
     <dependencies>
