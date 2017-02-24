@@ -65,6 +65,7 @@
     <module>data-jpa</module>
     <module>common</module>
     <module>hibernate</module>
+    <module>ribbon</module>
   </modules>
 
   <dependencyManagement>
