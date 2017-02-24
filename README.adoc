@@ -109,4 +109,10 @@ A Service class will contain the CRUD methods. No transaction support is require
 
 * Component: https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-actuator[Spring Boot Starter Actuator]
 
-The goal of this use case is to verify health endpoint exposed by the Spring Boot Actuator. In a local test case healthy and unhealthy statuses are verified using a custom health indicator. In an Open Shift test case only healthy status is verified, because otherwise pod wouldn't start or would be restarted.
+The goal of this use case is to verify health endpoint exposed by the Spring Boot Actuator. In a local test case healthy and unhealthy statuses are verified using a custom health indicator.
+In an OpenShift test case only healthy status is verified, because otherwise pod wouldn't start or would be restarted.
+
+== Ribbon
+
+* Component: https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-starter-ribbon[Spring Cloud Starter Ribbon]
+* Framework: Netflix Ribbon, Fabric8 Spring Cloud Kubernetes
