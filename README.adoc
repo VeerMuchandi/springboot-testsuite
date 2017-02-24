@@ -73,8 +73,8 @@ cxf:
 
 == JPA with Spring Data repositories
 
-* Component : https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-jpa[Spring Boot Starter Data JPA] and https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-rest[Spring Boot Starter Data Rest].
-* Framework : Hibernate
+* Component: https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-jpa[Spring Boot Starter Data JPA] and https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-rest[Spring Boot Starter Data Rest].
+* Framework: Hibernate
 
 **Description**
 
@@ -90,9 +90,15 @@ References:
 
 == JPA with Hibernate
 
-* Component : https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-jpa[Spring Boot Starter Data JPA].
-* Framework : Hibernate
+* Component: https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-jpa[Spring Boot Starter Data JPA].
+* Framework: Hibernate
 
 The goal of this use case is to setup a CRUD service talking to a H2 database where the model is defined with the common entities https://github.com/obsidian-toaster/springboot-testsuite/tree/master/common/src/main/java/org/jboss/snowdrop/common/domain[here].
 At run time, an in memory H2 database is created, some records imported using an import.sql file.
 A Service class will contain the CRUD methods. No transaction support is required.
+
+== Health Check
+
+* Component: https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-actuator[Spring Boot Starter Actuator]
+
+The goal of this use case is to verify health endpoint exposed by the Spring Boot Actuator. In a local test case healthy and unhealthy statuses are verified using a custom health indicator. In an Open Shift test case only healthy status is verified, because otherwise pod wouldn't start or would be restarted.
