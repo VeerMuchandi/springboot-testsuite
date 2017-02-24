@@ -4,15 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <artifactId>springboot-testsuite-parent</artifactId>
-    <groupId>org.jboss.snowdrop</groupId>
+    <groupId>org.jboss.snowdrop.testsuite</groupId>
+    <artifactId>testsuite-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>springboot-testsuite-health-check</artifactId>
+  <artifactId>health-check</artifactId>
 
-  <name>SpringBoot Testsuite - Health Check</name>
-  <description>SpringBoot Testsuite - Health Check</description>
+  <name>Snowdrop Test Suite - Health Check</name>
+  <description>Snowdrop Test Suite - Health Check</description>
 
   <properties>
     <fabric8.skip>false</fabric8.skip>
@@ -32,10 +32,6 @@
     <dependency>
       <groupId>io.obsidian</groupId>
       <artifactId>obsidian-testsuite-common</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.jboss.snowdrop</groupId>
-      <artifactId>springboot-testsuite-common</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>

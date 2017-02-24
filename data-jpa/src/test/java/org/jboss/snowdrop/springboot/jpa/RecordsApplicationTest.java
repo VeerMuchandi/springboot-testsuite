@@ -16,15 +16,13 @@
 
 package org.jboss.snowdrop.springboot.jpa;
 
-import java.net.MalformedURLException;
+import io.obsidian.testsuite.jpa.RecordsApplicationTestBase;
 
-import io.obsidian.testsuite.jpa.AbstractRecordsApplicationTestBase;
 import org.junit.runner.RunWith;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
 
 /**
  * Local test for records application.
@@ -33,13 +31,13 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class RecordsApplicationTest extends AbstractRecordsApplicationTestBase {
+public class RecordsApplicationTest extends RecordsApplicationTestBase {
 
 	@Value("${local.server.port}")
 	private int port;
 
 	@Override
-	protected String getBaseUrl() throws MalformedURLException {
+	protected String getBaseUrl() {
 		return String.format("http://localhost:%d", this.port);
 	}
 

@@ -36,7 +36,7 @@ import static org.hamcrest.CoreMatchers.is;
 @RunWith(Arquillian.class)
 public class HealthCheckApplicationHealthyIT {
 
-	private static final String ROUTE_NAME = "springboot-testsuite-health-check";
+	private static final String ROUTE_NAME = "health-check";
 
 	@ArquillianResource
 	private KubernetesClient kubernetesClient;
