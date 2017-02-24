@@ -71,19 +71,28 @@ cxf:
     component-scan: true
 ----
 
-== Access your data using JPA
+== JPA with Spring Data repositories
 
-* Component : https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-jpa[Spring Boot Starter Data JPA]
+* Component : https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-jpa[Spring Boot Starter Data JPA] and https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-rest[Spring Boot Starter Data Rest].
 * Framework : Hibernate
 
 **Description**
 
-The goal of this use case is to setup a CRUD service talking to a H2 Database where the model is defined according to a https://github.com/redhat-microservices/lab_swarm-openshift/blob/master/solution/cdservice/src/main/java/org/cdservice/model/Catalog.java[CD Catalog entity].
-At run time, an in memory H2 database is created, some records imported using an import.sql file. The definition of the datasource is defined within the `application.proerpties or application.yml` file.
-A Service class will contain the CRUD methods. No transaction support is required.
+The goal of this use case is to setup a CRUD service talking to a H2 database where the model is defined with the common entities https://github.com/obsidian-toaster/springboot-testsuite/tree/master/common/src/main/java/org/jboss/snowdrop/common/domain[here].
+At run time, an in memory H2 database is created, some records imported using an import.sql file.
+The CRUD services will be generated automatically.
 
 References:
 
 - https://spring.io/guides/gs/accessing-data-jpa[Spring How To guide]
 - https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html[Spring Boot doc]
 - http://blog.anthavio.net/2016/03/fun-with-spring-boot-auto-configuration.html[DataSource configuration]
+
+== JPA with Hibernate
+
+* Component : https://github.com/spring-projects/spring-boot/tree/master/spring-boot-starters/spring-boot-starter-data-jpa[Spring Boot Starter Data JPA].
+* Framework : Hibernate
+
+The goal of this use case is to setup a CRUD service talking to a H2 database where the model is defined with the common entities https://github.com/obsidian-toaster/springboot-testsuite/tree/master/common/src/main/java/org/jboss/snowdrop/common/domain[here].
+At run time, an in memory H2 database is created, some records imported using an import.sql file.
+A Service class will contain the CRUD methods. No transaction support is required.
