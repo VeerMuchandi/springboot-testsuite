@@ -116,3 +116,11 @@ In an OpenShift test case only healthy status is verified, because otherwise pod
 
 * Component: https://github.com/spring-cloud/spring-cloud-netflix/tree/master/spring-cloud-starter-ribbon[Spring Cloud Starter Ribbon]
 * Framework: Netflix Ribbon, Fabric8 Spring Cloud Kubernetes
+
+== Circuit Breaker
+
+* Hystrix
+
+== Tracing
+
+* Sleuth & Zipkin
