@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: client
+
+server:
+  port: 8080
+
+backend:
+  ribbon:
+    listOfServers: backend:8080
+    ServerListRefreshInterval: 15000
+
+hystrix.command.BackendCall.execution.isolation.thread.timeoutInMilliseconds: 30000
+hystrix.threadpool.BackendCallThread.coreSize: 5

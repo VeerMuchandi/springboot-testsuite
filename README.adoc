@@ -123,4 +123,5 @@ In an OpenShift test case only healthy status is verified, because otherwise pod
 
 == Tracing
 
-* Sleuth & Zipkin
+* Component: https://github.com/spring-cloud/spring-cloud-sleuth[Sleuth]
+* Framework: Zipkin
