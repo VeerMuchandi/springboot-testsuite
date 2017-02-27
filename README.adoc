@@ -124,6 +124,8 @@ In an OpenShift test case only healthy status is verified, because otherwise pod
 
 * Hystrix
 
+= Obsidian.Next
+
 == Tracing
 
 * Component: https://github.com/spring-cloud/spring-cloud-sleuth[Sleuth]
