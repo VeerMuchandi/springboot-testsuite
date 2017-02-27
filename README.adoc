@@ -35,8 +35,11 @@ mvn clean verify -Popenshift -kubernetes.auth.token=TOKEN \
   If multiple endpoints are registered, they will be used for loadbalancing by ribbon (https://github.com/fabric8io/spring-cloud-kubernetes#ribbon-discovery-in-kubernetes)
 
 * Hystrix + Turbine Server to stream info reported by the Services Circuit Checked (= Hystrix Circuit Breaker pattern)
-* Zipkin (https://github.com/fabric8io/kubernetes-zipkin) till Hawkular (APM) + CloudForms are ready / https://cloud.spring.io/spring-cloud-sleuth/
 * Logging (EFK)
+
+== Future version of Obsidian.next
+
+* Zipkin (https://github.com/fabric8io/kubernetes-zipkin) till Hawkular (APM) + CloudForms are ready / https://cloud.spring.io/spring-cloud-sleuth/
 * Zuul : On OpenShift : APi Manager + Apiman Gateway should be the way to go
 
 == REST Service with Apache Tomcat
