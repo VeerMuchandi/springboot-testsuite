@@ -44,7 +44,7 @@ public class RestApplicationTest {
 	@Test
 	public void callServiceTest() {
 		Greeting message = this.template.getForObject("http://localhost:" + this.port + "/greeting", Greeting.class);
-		Assert.assertEquals("Hello, World!", message.getContent());
+		Assert.assertEquals("Hello, World", message.getContent());
 		Assert.assertEquals(1, message.getId());
 	}
 
